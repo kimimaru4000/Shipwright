@@ -65,6 +65,7 @@ const std::vector<const char*> enhancementsCvars = {
     "gForgeTime",
     "gClimbSpeed",
     "gFasterBlockPush",
+    "gLedgeClimbSpeed",
     "gFasterHeavyBlockLift",
     "gNoForcedNavi",
     "gSkulltulaFreeze",
@@ -442,6 +443,8 @@ const std::vector<PresetEntry> enhancedPresetEntries = {
     PRESET_ENTRY_S32("gClimbSpeed", 3),
     // Faster Heavy Block Lift
     PRESET_ENTRY_S32("gFasterHeavyBlockLift", 1),
+    // Ledge climb speed (x1 to x3)
+    PRESET_ENTRY_S32("gLedgeClimbSpeed", 1),
     // No Forced Navi
     PRESET_ENTRY_S32("gNoForcedNavi", 1),
     // No Skulltula Freeze
@@ -558,6 +561,8 @@ const std::vector<PresetEntry> randomizerPresetEntries = {
     PRESET_ENTRY_S32("gClimbSpeed", 3),
     // Faster Heavy Block Lift
     PRESET_ENTRY_S32("gFasterHeavyBlockLift", 1),
+    // Ledge climb speed (x1 to x3)
+    PRESET_ENTRY_S32("gLedgeClimbSpeed", 1),
     // No Forced Navi
     PRESET_ENTRY_S32("gNoForcedNavi", 1),
     // No Skulltula Freeze

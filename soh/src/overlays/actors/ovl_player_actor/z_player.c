@@ -4140,7 +4140,7 @@ s32 func_80838A14(Player* this, PlayState* play) {
 
             this->actor.bgCheckFlags |= 1;
 
-            LinkAnimation_PlayOnceSetSpeed(play, &this->skelAnime, sp38, 1.3f);
+            LinkAnimation_PlayOnceSetSpeed(play, &this->skelAnime, sp38, 1.3f * CVarGetInteger("gLedgeClimbSpeed", 1));
             AnimationContext_DisableQueue(play);
 
             this->actor.shape.rot.y = this->currentYaw = this->actor.wallYaw + 0x8000;
